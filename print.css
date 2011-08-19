@@ -7,7 +7,7 @@ code {
   padding-left: .5ex;
   padding-right: .5ex;
 }
-ul#navigation { display: none; }
+ul#navigation,.dates div#news { display: none; }
 h1,h2,h3,h4,h5,h6 {
   font-weight: bold;
   margin-top: 1em;
@@ -27,9 +27,11 @@ div#content ul li {
 * { color: black; }
 a { text-decoration: none; }
 
-div#content a:link:after,
-div#content a:visited:after {
-   content: " (" attr(href) ") ";
+a[href^=http]:link:after,
+a[href^=http]:visited:after {
+   content: " (" attr(href) ")";
    font-size: 90%;
-   font-family: "Courier New", Courier, monospace;
+   font-family: Monaco, "Courier New", Courier, monospace;
 }
+
+div#footer { font-size: 10pt; border-top: 1pt solid black; padding-top: 1em; margin-top: 2em; }
