@@ -139,6 +139,16 @@ div#content ul li {
   list-style-type: disc; 
 }
 
+div#content blockquote {
+  border-top: 1px dotted black;
+  border-bottom: 1px dotted black;
+  margin: 0.85714285714286em; /* 12px / 14px = 0.85714285714286 */
+  margin-top: 0;
+  margin-bottom: 1.71428571428571em; /* 24px / 14px = 1.71428571428571 */ 
+  padding: 0.85714285714286em; /* 12px / 14px = 0.85714285714286 */
+  background: #EEE;
+}
+
 div#footer a { color: #cde0d1; }
 @media screen and (min-width: 768px) {
   h1 { 
